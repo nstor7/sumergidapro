@@ -1,5 +1,8 @@
 import page from 'page'
 
-require('./landing')
+require('./header')
+require('./banner')
+require('./servicio')
+require('./footer')
 
 page()

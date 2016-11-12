@@ -1,8 +1,9 @@
 import yo from 'yo-yo'
-import header from '../header'
 
-var nav = yo`
-<nav id="nav">
+module.exports = yo`
+<header>
+  <a class="logo"></a>
+  <nav id="nav">
  <ul>
   <li><a href="#">Registrate</a></li>
   <li><a href="#">pedazo</a></li>
@@ -12,5 +13,5 @@ var nav = yo`
   <i class="fa fa-bars" aria-hidden="true"></i>
  </a>
 </nav>
-`
-module.exports = header(nav)
+</header>`
+
