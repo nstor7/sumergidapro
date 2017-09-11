@@ -34,22 +34,23 @@ mailer.extend(app, {
 
 app.post('/contacto/send', function (req, res, next) {
  console.log(req.body)
- app.mailer.send('email', {
-   to: secret.mailaddress,
-   subject: 'email enviado desde la pagina de contacto',
-   mensaje: {
-     name: req.body.nombre,
-     email: req.body.email,
-     phone: req.body.asunto,
-     subject: req.body.message
-   }
- }, function (err) {
-   if (err) {
-     // handle error
-     console.log(err);
-     return res.redirect('/error')
-   }
-   res.redirect('/confirmacion');
- });
 })
+//  app.mailer.send('email', {
+//    to: secret.mailaddress,
+//    subject: 'email enviado desde la pagina de contacto',
+//    mensaje: {
+//      name: req.body.nombre,
+//      email: req.body.email,
+//      phone: req.body.asunto,
+//      subject: req.body.message
+//    }
+//  }, function (err) {
+//    if (err) {
+//      // handle error
+//      console.log(err);
+//      return res.redirect('/error')
+//    }
+//    res.redirect('/confirmacion');
+//  });
+// })
 module.exports = app

@@ -2507,22 +2507,45 @@ module.exports = [
 },{}],16:[function(require,module,exports){
 'use strict';
 
+var _templateObject = _taggedTemplateLiteral(['\n<div class="social" id="social">\n <a target="_blank" href="https://www.facebook.com/sumergidapro"><i class="fa fa-facebook verde" aria-hidden="true"></i></a>\n <a target="_blank" href="https://www.instagram.com/sumergidapro/"><i class="fa fa-instagram verde" aria-hidden="true"></i></a>\n <a target="_blank" href="https://www.youtube.com/channel/UCxPu6xnzlXkkT8w3Zg0N6SQ"><i class="fa fa-youtube verde" aria-hidden="true"></i></a>\n</div>\n'], ['\n<div class="social" id="social">\n <a target="_blank" href="https://www.facebook.com/sumergidapro"><i class="fa fa-facebook verde" aria-hidden="true"></i></a>\n <a target="_blank" href="https://www.instagram.com/sumergidapro/"><i class="fa fa-instagram verde" aria-hidden="true"></i></a>\n <a target="_blank" href="https://www.youtube.com/channel/UCxPu6xnzlXkkT8w3Zg0N6SQ"><i class="fa fa-youtube verde" aria-hidden="true"></i></a>\n</div>\n']);
+
+var _yoYo = require('yo-yo');
+
+var _yoYo2 = _interopRequireDefault(_yoYo);
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
+
+function _taggedTemplateLiteral(strings, raw) {
+  return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }));
+}
+
+module.exports = (0, _yoYo2.default)(_templateObject);
+
+},{"yo-yo":7}],17:[function(require,module,exports){
+'use strict';
+
 var _templateObject = _taggedTemplateLiteral(['\n <a href=', ' class="tarjetita">\n  <div class="tarjetitaElemento imagen" id="imagenAudio" target="_blank" style="background: url(', '); background-size: cover;">\n\n  </div>\n  <div class="tarjetitaElemento info naranja">\n   <div class="infoTexto">\n    <h3>', '</h3>\n    <h2>', '</h2>\n    <p>', '</p>\n    <div class="proximo verde ', '">\n     <h5>Proximamente</h5>\n    </div>\n   </div>\n  </div>\n </a>\n '], ['\n <a href=', ' class="tarjetita">\n  <div class="tarjetitaElemento imagen" id="imagenAudio" target="_blank" style="background: url(', '); background-size: cover;">\n\n  </div>\n  <div class="tarjetitaElemento info naranja">\n   <div class="infoTexto">\n    <h3>', '</h3>\n    <h2>', '</h2>\n    <p>', '</p>\n    <div class="proximo verde ', '">\n     <h5>Proximamente</h5>\n    </div>\n   </div>\n  </div>\n </a>\n ']);
 
 var _yoYo = require('yo-yo');
 
 var _yoYo2 = _interopRequireDefault(_yoYo);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function _taggedTemplateLiteral(strings, raw) {
+  return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }));
+}
 
 module.exports = function (produccion) {
   var el = (0, _yoYo2.default)(_templateObject, produccion.url, produccion.miniatura, produccion.titulo, produccion.autor, produccion.descripcion, produccion.proximo);
   return el;
 };
 
-},{"yo-yo":7}],17:[function(require,module,exports){
+},{"yo-yo":7}],18:[function(require,module,exports){
 'use strict';
 
 var _page = require('page');
@@ -2545,14 +2568,16 @@ var _functions = require('../header/functions');
 
 var _functions2 = _interopRequireDefault(_functions);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 (0, _page2.default)('/confirmacion', _header2.default, _functions2.default.noScrollFunction, function (ctx, next) {
   var main = document.getElementById('main-container');
   (0, _emptyElement2.default)(main).appendChild(_template2.default);
 });
 
-},{"../header":24,"../header/functions":23,"./template":18,"empty-element":3,"page":4}],18:[function(require,module,exports){
+},{"../header":25,"../header/functions":24,"./template":19,"empty-element":3,"page":4}],19:[function(require,module,exports){
 'use strict';
 
 var _templateObject = _taggedTemplateLiteral(['\n <div class="main">\n  <div class="listaTitulo verde">\n   <h1>Conct\xE1ctenos</h1>\n  </div>\n  <article class="tarjeta alrevez">\n   <div class="c3 imagen" id="imagenAudio"></div>\n   <div class="c2 info naranja">\n    <div class="infoTexto contacto">\n     <h3>Hemos Recibido Su Mensaje</h3>\n     <h5>gracias</h5>\n    </div>\n   </div>\n  </article>\n </div>\n'], ['\n <div class="main">\n  <div class="listaTitulo verde">\n   <h1>Conct\xE1ctenos</h1>\n  </div>\n  <article class="tarjeta alrevez">\n   <div class="c3 imagen" id="imagenAudio"></div>\n   <div class="c2 info naranja">\n    <div class="infoTexto contacto">\n     <h3>Hemos Recibido Su Mensaje</h3>\n     <h5>gracias</h5>\n    </div>\n   </div>\n  </article>\n </div>\n']);
@@ -2561,13 +2586,17 @@ var _yoYo = require('yo-yo');
 
 var _yoYo2 = _interopRequireDefault(_yoYo);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function _taggedTemplateLiteral(strings, raw) {
+  return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }));
+}
 
 module.exports = (0, _yoYo2.default)(_templateObject);
 
-},{"yo-yo":7}],19:[function(require,module,exports){
+},{"yo-yo":7}],20:[function(require,module,exports){
 'use strict';
 
 var _page = require('page');
@@ -2590,29 +2619,46 @@ var _functions = require('../header/functions');
 
 var _functions2 = _interopRequireDefault(_functions);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 (0, _page2.default)('/contacto', _header2.default, _functions2.default.noScrollFunction, function (ctx, next) {
   var main = document.getElementById('main-container');
   (0, _emptyElement2.default)(main).appendChild(_template2.default);
 });
 
-},{"../header":24,"../header/functions":23,"./template":20,"empty-element":3,"page":4}],20:[function(require,module,exports){
+},{"../header":25,"../header/functions":24,"./template":21,"empty-element":3,"page":4}],21:[function(require,module,exports){
 'use strict';
 
-var _templateObject = _taggedTemplateLiteral(['\n <div class="main">\n  <div class="listaTitulo verde">\n   <h1>Conct\xE1ctenos</h1>\n  </div>\n  <article class="tarjeta alrevez">\n   <div class="c3 imagen" id="imagenAudio"></div>\n   <div class="c2 info naranja">\n    <div class="infoTexto contacto">\n     <h5>Email:</h5>\n     <h3>info@sumergidapro.com</h3>\n     <h5>tel\xE9fono:</h5>\n     <h3>6643 3698</h3>\n     <form action="/contacto/send" method="post">\n      <input type="text" name="nombre" placeholder="Nombre">\n      <input type="text" name="email" placeholder="Email">\n      <input type="text" name="asunto" placeholder="Asunto">\n      <textarea name="mensaje" rows="10" cols="30" placeholder="Envianos Tu Mensaje"></textarea>\n      <input class="boton verde" type="submit" name="submit" value="Enviar">\n     </form>\n    </div>\n   </div>\n  </article>\n </div>\n'], ['\n <div class="main">\n  <div class="listaTitulo verde">\n   <h1>Conct\xE1ctenos</h1>\n  </div>\n  <article class="tarjeta alrevez">\n   <div class="c3 imagen" id="imagenAudio"></div>\n   <div class="c2 info naranja">\n    <div class="infoTexto contacto">\n     <h5>Email:</h5>\n     <h3>info@sumergidapro.com</h3>\n     <h5>tel\xE9fono:</h5>\n     <h3>6643 3698</h3>\n     <form action="/contacto/send" method="post">\n      <input type="text" name="nombre" placeholder="Nombre">\n      <input type="text" name="email" placeholder="Email">\n      <input type="text" name="asunto" placeholder="Asunto">\n      <textarea name="mensaje" rows="10" cols="30" placeholder="Envianos Tu Mensaje"></textarea>\n      <input class="boton verde" type="submit" name="submit" value="Enviar">\n     </form>\n    </div>\n   </div>\n  </article>\n </div>\n']);
+var _templateObject = _taggedTemplateLiteral(['\n <div class="main">\n  <div class="listaTitulo verde">\n   <h1>Conct\xE1ctenos</h1>\n  </div>\n  <article class="tarjeta alrevez">\n   <div class="c3 imagen" id="imagenAudio"></div>\n   <div class="c2 info naranja">\n    <div class="infoTexto contacto">\n     <h5>Email:</h5>\n     <h3>info@sumergidapro.com</h3>\n     <h5>tel\xE9fono:</h5>\n     <h3>6643 3698</h3>\n     <h5>S\xEDguenos en:</h5> \n     ', '\n    </div>\n   </div>\n  </article>\n </div>\n'], ['\n <div class="main">\n  <div class="listaTitulo verde">\n   <h1>Conct\xE1ctenos</h1>\n  </div>\n  <article class="tarjeta alrevez">\n   <div class="c3 imagen" id="imagenAudio"></div>\n   <div class="c2 info naranja">\n    <div class="infoTexto contacto">\n     <h5>Email:</h5>\n     <h3>info@sumergidapro.com</h3>\n     <h5>tel\xE9fono:</h5>\n     <h3>6643 3698</h3>\n     <h5>S\xEDguenos en:</h5> \n     ', '\n    </div>\n   </div>\n  </article>\n </div>\n']);
 
 var _yoYo = require('yo-yo');
 
 var _yoYo2 = _interopRequireDefault(_yoYo);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _social = require('../componentes/social');
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+var _social2 = _interopRequireDefault(_social);
 
-module.exports = (0, _yoYo2.default)(_templateObject);
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-},{"yo-yo":7}],21:[function(require,module,exports){
+function _taggedTemplateLiteral(strings, raw) {
+  return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }));
+}
+
+module.exports = (0, _yoYo2.default)(_templateObject, _social2.default);
+// <form action="/send" method="post">
+//       <input type="text" name="nombre" placeholder="Nombre">
+//       <input type="text" name="email" placeholder="Email">
+//       <input type="text" name="asunto" placeholder="Asunto">
+//       <textarea name="mensaje" rows="10" cols="30" placeholder="Envianos Tu Mensaje"></textarea>
+//       <input class="boton verde" type="submit" name="submit" value="Enviar">
+//      </form>
+
+},{"../componentes/social":16,"yo-yo":7}],22:[function(require,module,exports){
 'use strict';
 
 var _page = require('page');
@@ -2635,14 +2681,16 @@ var _functions = require('../header/functions');
 
 var _functions2 = _interopRequireDefault(_functions);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 (0, _page2.default)('/error', _header2.default, _functions2.default.noScrollFunction, function (ctx, next) {
   var main = document.getElementById('main-container');
   (0, _emptyElement2.default)(main).appendChild(_template2.default);
 });
 
-},{"../header":24,"../header/functions":23,"./template":22,"empty-element":3,"page":4}],22:[function(require,module,exports){
+},{"../header":25,"../header/functions":24,"./template":23,"empty-element":3,"page":4}],23:[function(require,module,exports){
 'use strict';
 
 var _templateObject = _taggedTemplateLiteral(['\n <div class="main">\n  <div class="listaTitulo verde">\n   <h1>Conct\xE1ctenos</h1>\n  </div>\n  <article class="tarjeta alrevez">\n   <div class="c3 imagen" id="imagenAudio"></div>\n   <div class="c2 info naranja">\n    <div class="infoTexto contacto">\n     <h3>Ha ocurrido un error</h3>\n     <a href="/contacto">\n      <h5>intentelo denuevo</h5>\n     </a>\n    </div>\n   </div>\n  </article>\n </div>\n'], ['\n <div class="main">\n  <div class="listaTitulo verde">\n   <h1>Conct\xE1ctenos</h1>\n  </div>\n  <article class="tarjeta alrevez">\n   <div class="c3 imagen" id="imagenAudio"></div>\n   <div class="c2 info naranja">\n    <div class="infoTexto contacto">\n     <h3>Ha ocurrido un error</h3>\n     <a href="/contacto">\n      <h5>intentelo denuevo</h5>\n     </a>\n    </div>\n   </div>\n  </article>\n </div>\n']);
@@ -2651,13 +2699,17 @@ var _yoYo = require('yo-yo');
 
 var _yoYo2 = _interopRequireDefault(_yoYo);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function _taggedTemplateLiteral(strings, raw) {
+  return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }));
+}
 
 module.exports = (0, _yoYo2.default)(_templateObject);
 
-},{"yo-yo":7}],23:[function(require,module,exports){
+},{"yo-yo":7}],24:[function(require,module,exports){
 'use strict';
 
 var navegacion = function navegacion() {
@@ -2685,7 +2737,7 @@ var noScrollFunction = function noScrollFunction(ctx, next) {
 
 module.exports = { navegacion: navegacion, scrollFunction: scrollFunction, noScrollFunction: noScrollFunction };
 
-},{}],24:[function(require,module,exports){
+},{}],25:[function(require,module,exports){
 'use strict';
 
 var _emptyElement = require('empty-element');
@@ -2696,7 +2748,9 @@ var _template = require('./template');
 
 var _template2 = _interopRequireDefault(_template);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 module.exports = function (ctx, next) {
   var header = document.getElementById('header-container');
@@ -2704,7 +2758,7 @@ module.exports = function (ctx, next) {
   next();
 };
 
-},{"./template":25,"empty-element":3}],25:[function(require,module,exports){
+},{"./template":26,"empty-element":3}],26:[function(require,module,exports){
 'use strict';
 
 var _templateObject = _taggedTemplateLiteral(['\n<header id="header">\n <a class="logo"></a>\n <nav id="nav" class="nav hidden">\n  <ul>\n   <li><a onclick=', ' href="/">Inicio</a></li>\n   <li><a onclick=', ' href="/musica">M\xFAsica</a></li>\n   <li><a onclick=', ' href="/contacto">Contacto</a></li>\n  </ul>\n </nav>\n <a href="#" class="navButton" onclick=', '>\n   <i class="fa fa-bars" aria-hidden="true"></i>\n </a>\n</header>'], ['\n<header id="header">\n <a class="logo"></a>\n <nav id="nav" class="nav hidden">\n  <ul>\n   <li><a onclick=', ' href="/">Inicio</a></li>\n   <li><a onclick=', ' href="/musica">M\xFAsica</a></li>\n   <li><a onclick=', ' href="/contacto">Contacto</a></li>\n  </ul>\n </nav>\n <a href="#" class="navButton" onclick=', '>\n   <i class="fa fa-bars" aria-hidden="true"></i>\n </a>\n</header>']);
@@ -2717,23 +2771,29 @@ var _functions = require('./functions');
 
 var _functions2 = _interopRequireDefault(_functions);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function _taggedTemplateLiteral(strings, raw) {
+  return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }));
+}
 
 module.exports = (0, _yoYo2.default)(_templateObject, _functions2.default.navegacion, _functions2.default.navegacion, _functions2.default.navegacion, _functions2.default.navegacion);
 
 //  <li><a onclick=${ctrl.navegacion} href="/audiovisuales">AudioVisuales</a></li>
 //  <li><a onclick=${ctrl.navegacion} href="/blog">Blog</a></li>
 
-},{"./functions":23,"yo-yo":7}],26:[function(require,module,exports){
+},{"./functions":24,"yo-yo":7}],27:[function(require,module,exports){
 'use strict';
 
 var _page = require('page');
 
 var _page2 = _interopRequireDefault(_page);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 (0, _page2.default)('*', function (ctx, next) {
   window.scrollTo(0, 0);
@@ -2747,7 +2807,7 @@ require('./error');
 
 (0, _page2.default)();
 
-},{"./confirmacion":17,"./contacto":19,"./error":21,"./inicio":28,"./musica":30,"page":4}],27:[function(require,module,exports){
+},{"./confirmacion":18,"./contacto":20,"./error":22,"./inicio":29,"./musica":31,"page":4}],28:[function(require,module,exports){
 'use strict';
 
 var _templateObject = _taggedTemplateLiteral(['\n<section class="portada">\n  <div class="portada-imagen">\n   <img class="logo" src="/imagenes/sumergidaLogo.png" alt="">\n  </div>\n</section>\n'], ['\n<section class="portada">\n  <div class="portada-imagen">\n   <img class="logo" src="/imagenes/sumergidaLogo.png" alt="">\n  </div>\n</section>\n']);
@@ -2756,13 +2816,17 @@ var _yoYo = require('yo-yo');
 
 var _yoYo2 = _interopRequireDefault(_yoYo);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function _taggedTemplateLiteral(strings, raw) {
+  return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }));
+}
 
 module.exports = (0, _yoYo2.default)(_templateObject);
 
-},{"yo-yo":7}],28:[function(require,module,exports){
+},{"yo-yo":7}],29:[function(require,module,exports){
 'use strict';
 
 var _page = require('page');
@@ -2785,7 +2849,9 @@ var _functions = require('../header/functions');
 
 var _functions2 = _interopRequireDefault(_functions);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 (0, _page2.default)('/', _header2.default, function (ctx, next) {
   var main = document.getElementById('main-container');
@@ -2793,7 +2859,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   window.addEventListener("scroll", _functions2.default.scrollFunction);
 });
 
-},{"../header":24,"../header/functions":23,"./template":29,"empty-element":3,"page":4}],29:[function(require,module,exports){
+},{"../header":25,"../header/functions":24,"./template":30,"empty-element":3,"page":4}],30:[function(require,module,exports){
 'use strict';
 
 var _templateObject = _taggedTemplateLiteral(['\n<main>\n  ', '\n  <article class="tarjeta alrevez">\n    <div class="c3 imagen" id="imagenAudio"></div>\n    <div class="c2 info naranja">\n      <div class="infoTexto">\n          <h1>SUMERGIDA</h1>\n          <h2>PRODUCCIONES</h2>\n          <p>Somos una <b>productora</b> de m\xFAsica y audio-visuales, cuyo objetivo principal es la creaci\xF3n de arte y la producci\xF3n de piezas que sirvan para difundir el trabajo de art\xEDstas, especialmente el realizado en Panam\xE1.</p>\n          <p>Nuestro nombre es un homenaje a la <i>"Cath\xE9drale Engloutie"</i> de <b>Claude Debussy</b>, que en espa\xF1ol se traduce la <i>"Catedral Sumergida"</i>.</p>\n          <p>Creemos en el poder del <b>arte</b> para hacer crecer al ser humano, para generar identidad, para desarrollar la sensibilidad y para entender la historia de nuestra especie.</p>\n      </div>\n    </div>\n  </article>\n  <article class="c5 separador" id="inicioConsole">\n    <div>\n    </div>\n  </article>\n  <article class="tarjeta">\n    <div class="c3 imagen" id="imagenMusica"></div>\n    <div class="c2 info verde">\n      <div class="infoTexto">\n        <h3>SUMERGIDA</h3>\n        <h2>M\xDASICA</h2>\n        <p>Estamos enfocados en la producci\xF3n musical. Nuestra <b>visi\xF3n</b> es la de propiciar el desarrollo de grandes m\xFAsicos, compositores y arreglistas en los que creemos.</p>\n        <p>Buscamos llevar, a cada vez m\xE1s personas, m\xFAsica de <b>excelente</b> calidad, que inspire, emocione y toque su vida. </p>\n        <p>Tambi\xE9n queremos difundir g\xE9neros poco conocidos u olvidados, que creemos que son muy valiosos. Desde los grandes <b>maestros</b> de la m\xFAsica erudita hasta las nuevas corrientes de vanguardia.</p>\n      </div> \n    </div>\n  </article>\n  <article class="c5 separador" id="inicioCamaras">\n    <div>\n    </div>\n  </article>\n  <article class="tarjeta alrevez">\n    <div class="c3 imagen" id="imagenCine"></div>\n    <div class="c2 info naranja">\n      <div class="infoTexto">\n          <h3>SUMERGIDA</h3>\n          <h2>AUDIOVISUALES</h2>\n          <p>Los g\xE9neros audiovisuales son cada vez m\xE1s relevantes y creemos que es importante generar contenidos para la alt\xEDsima demanda que trae el mundo digital. </p>\n          <p>Es necesario complementar la oferta audiovisual actual, centrada en la velocidad y muchas veces en una impersonal y consumista manera de ver el mundo. Queremos invitarles a disfrutar del presente y a sensibilizarse ante la belleza de la creaci\xF3n art\xEDstica.</p>\n          <p>La tecnolog\xEDa actual nos d\xE1 la oportunidad de trascender fronteras, idiomas, culturas. Buscamos aprovechar al m\xE1ximo las herramientas que tenemos hoy en d\xEDa para presentarle nuestra propuesta al mundo.</p>\n      </div>\n    </div>\n  </article>\n</main>\n'], ['\n<main>\n  ', '\n  <article class="tarjeta alrevez">\n    <div class="c3 imagen" id="imagenAudio"></div>\n    <div class="c2 info naranja">\n      <div class="infoTexto">\n          <h1>SUMERGIDA</h1>\n          <h2>PRODUCCIONES</h2>\n          <p>Somos una <b>productora</b> de m\xFAsica y audio-visuales, cuyo objetivo principal es la creaci\xF3n de arte y la producci\xF3n de piezas que sirvan para difundir el trabajo de art\xEDstas, especialmente el realizado en Panam\xE1.</p>\n          <p>Nuestro nombre es un homenaje a la <i>"Cath\xE9drale Engloutie"</i> de <b>Claude Debussy</b>, que en espa\xF1ol se traduce la <i>"Catedral Sumergida"</i>.</p>\n          <p>Creemos en el poder del <b>arte</b> para hacer crecer al ser humano, para generar identidad, para desarrollar la sensibilidad y para entender la historia de nuestra especie.</p>\n      </div>\n    </div>\n  </article>\n  <article class="c5 separador" id="inicioConsole">\n    <div>\n    </div>\n  </article>\n  <article class="tarjeta">\n    <div class="c3 imagen" id="imagenMusica"></div>\n    <div class="c2 info verde">\n      <div class="infoTexto">\n        <h3>SUMERGIDA</h3>\n        <h2>M\xDASICA</h2>\n        <p>Estamos enfocados en la producci\xF3n musical. Nuestra <b>visi\xF3n</b> es la de propiciar el desarrollo de grandes m\xFAsicos, compositores y arreglistas en los que creemos.</p>\n        <p>Buscamos llevar, a cada vez m\xE1s personas, m\xFAsica de <b>excelente</b> calidad, que inspire, emocione y toque su vida. </p>\n        <p>Tambi\xE9n queremos difundir g\xE9neros poco conocidos u olvidados, que creemos que son muy valiosos. Desde los grandes <b>maestros</b> de la m\xFAsica erudita hasta las nuevas corrientes de vanguardia.</p>\n      </div> \n    </div>\n  </article>\n  <article class="c5 separador" id="inicioCamaras">\n    <div>\n    </div>\n  </article>\n  <article class="tarjeta alrevez">\n    <div class="c3 imagen" id="imagenCine"></div>\n    <div class="c2 info naranja">\n      <div class="infoTexto">\n          <h3>SUMERGIDA</h3>\n          <h2>AUDIOVISUALES</h2>\n          <p>Los g\xE9neros audiovisuales son cada vez m\xE1s relevantes y creemos que es importante generar contenidos para la alt\xEDsima demanda que trae el mundo digital. </p>\n          <p>Es necesario complementar la oferta audiovisual actual, centrada en la velocidad y muchas veces en una impersonal y consumista manera de ver el mundo. Queremos invitarles a disfrutar del presente y a sensibilizarse ante la belleza de la creaci\xF3n art\xEDstica.</p>\n          <p>La tecnolog\xEDa actual nos d\xE1 la oportunidad de trascender fronteras, idiomas, culturas. Buscamos aprovechar al m\xE1ximo las herramientas que tenemos hoy en d\xEDa para presentarle nuestra propuesta al mundo.</p>\n      </div>\n    </div>\n  </article>\n</main>\n']);
@@ -2806,13 +2872,17 @@ var _banner = require('./banner');
 
 var _banner2 = _interopRequireDefault(_banner);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function _taggedTemplateLiteral(strings, raw) {
+  return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }));
+}
 
 module.exports = (0, _yoYo2.default)(_templateObject, _banner2.default);
 
-},{"./banner":27,"yo-yo":7}],30:[function(require,module,exports){
+},{"./banner":28,"yo-yo":7}],31:[function(require,module,exports){
 'use strict';
 
 var _page = require('page');
@@ -2835,14 +2905,16 @@ var _functions = require('../header/functions');
 
 var _functions2 = _interopRequireDefault(_functions);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 (0, _page2.default)('/musica', _header2.default, _functions2.default.noScrollFunction, function (ctx, next) {
   var main = document.getElementById('main-container');
   (0, _emptyElement2.default)(main).appendChild(_template2.default);
 });
 
-},{"../header":24,"../header/functions":23,"./template":32,"empty-element":3,"page":4}],31:[function(require,module,exports){
+},{"../header":25,"../header/functions":24,"./template":33,"empty-element":3,"page":4}],32:[function(require,module,exports){
 'use strict';
 
 module.exports = [{
@@ -2875,7 +2947,7 @@ module.exports = [{
   proximo: ''
 }];
 
-},{}],32:[function(require,module,exports){
+},{}],33:[function(require,module,exports){
 'use strict';
 
 var _templateObject = _taggedTemplateLiteral(['\n<main class="main">\n <div class="listaTitulo verde">\n  <h1>sumergida</h1>\n  <h2>M\xFAsica</h2>\n </div>\n <section class="lista">\n  ', '\n </section>\n</main>\n'], ['\n<main class="main">\n <div class="listaTitulo verde">\n  <h1>sumergida</h1>\n  <h2>M\xFAsica</h2>\n </div>\n <section class="lista">\n  ', '\n </section>\n</main>\n']);
@@ -2892,12 +2964,16 @@ var _musicaLista = require('./musicaLista');
 
 var _musicaLista2 = _interopRequireDefault(_musicaLista);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function _taggedTemplateLiteral(strings, raw) {
+  return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } }));
+}
 
 module.exports = (0, _yoYo2.default)(_templateObject, _musicaLista2.default.map(function (produccion) {
   return (0, _tarjeta2.default)(produccion);
 }));
 
-},{"../componentes/tarjeta":16,"./musicaLista":31,"yo-yo":7}]},{},[26]);
+},{"../componentes/tarjeta":17,"./musicaLista":32,"yo-yo":7}]},{},[27]);
