@@ -1,8 +1,13 @@
 import page from 'page'
 
-require('./header')
-require('./banner')
-require('./servicio')
-require('./footer')
+page('*', function(ctx, next){
+ window.scrollTo(0,0)
+ next()
+})
+require('./inicio')
+require('./musica')
+require('./contacto')
+require('./confirmacion')
+require('./error')
 
 page()

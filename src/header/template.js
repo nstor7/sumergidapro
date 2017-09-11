@@ -1,17 +1,20 @@
 import yo from 'yo-yo'
+import ctrl from './functions'
 
 module.exports = yo`
-<header>
-  <a class="logo"></a>
-  <nav id="nav">
- <ul>
-  <li><a href="#">Registrate</a></li>
-  <li><a href="#">pedazo</a></li>
-  <li><a href="#">deloco</a></li>
- </ul>
- <a href="">
-  <i class="fa fa-bars" aria-hidden="true"></i>
+<header id="header">
+ <a class="logo"></a>
+ <nav id="nav" class="nav hidden">
+  <ul>
+   <li><a onclick=${ctrl.navegacion} href="/">Inicio</a></li>
+   <li><a onclick=${ctrl.navegacion} href="/musica">Música</a></li>
+   <li><a onclick=${ctrl.navegacion} href="/contacto">Contacto</a></li>
+  </ul>
+ </nav>
+ <a href="#" class="navButton" onclick=${ctrl.navegacion}>
+   <i class="fa fa-bars" aria-hidden="true"></i>
  </a>
-</nav>
 </header>`
 
+  //  <li><a onclick=${ctrl.navegacion} href="/audiovisuales">AudioVisuales</a></li>
+  //  <li><a onclick=${ctrl.navegacion} href="/blog">Blog</a></li>
