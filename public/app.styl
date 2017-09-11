@@ -1,0 +1,199 @@
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'
+@import "https://fonts.googleapis.com/css?family=Amiri|Asap:400,700|Cairo|Raleway:600"
+
+
+// GUÍA DE ESTILOS
+
+//Generales
+body
+  margin 0
+div, section, article, a
+  box-sizing: border-box
+
+//Fuentes
+h1, h3
+  font-family: 'Raleway', sans-serif
+  font-size 3vw
+  margin 0
+  padding 0
+  color: #ddd
+  text-transform: uppercase
+  @media(max-width: 900px)
+    font-size: 9vw
+a  
+  font-family: 'Cairo', sans-serif
+  font-size 1.5vw
+  font-weight: 400
+  color: #ddd
+  text-decoration none
+  @media(max-width: 900px)
+    font-size: 4.5vw
+h2, h5
+  font-family: 'Cairo', sans-serif
+  font-size 1vw
+  font-weight: 400
+  color: #09A5B8
+  margin 0
+  padding 0
+  letter-spacing: 0.7vw
+  line-height: 1vw
+  text-transform: uppercase
+  @media(max-width: 900px)
+    font-size: 3vw
+    letter-spacing: 2.1vw
+    line-height: 3vw
+h4
+  font-family: 'Amiri', serif
+  font-size 1vw
+  margin 0
+  padding 0
+  color: #ddd
+p
+  font-family: 'Asap', sans-serif
+  font-size: 1.3vw
+  line-height: 1.6vw  
+  letter-spacing: 0.05vw
+  color: #ddd
+  @media(max-width: 900px)
+    font-size: 3.9vw
+    line-height: 4.8vw
+    letter-spacing: 0.15vw
+  b
+    color: #09A5B8
+    font-weight: normal
+    text-transform: uppercase
+  i 
+    font-size: 1.1vw
+    @media(max-width:900px)
+      font-size: 3.3vw
+
+//Colores
+.naranja
+  background: #DB3418
+.negro
+  background: black
+.verde
+  background: #044D63
+
+//Tamaños de Caja
+.c2
+  width: 40vw
+  padding: 4vw
+  height: 40vw
+  @media(max-width: 900px)
+    width: 100vw
+    height: 100vw
+.c3
+  width: 60vw
+  height: 40vw
+  @media(max-width: 900px)
+    width: 100vw
+    height: 66.66vw
+.c5
+  width: 100vw
+  height: 20vw  
+
+//Tipos de Cajas
+.main
+  margin-top: 5vw
+  @media(max-width: 900px)
+    margin-top: 15vw
+.tarjeta
+  width: 100vw
+  height: 40vw
+  display: flex
+  @media(max-width: 900px)
+    height: 166.66vw
+    flex-wrap: wrap
+.info
+  display: flex
+  justify-content: center
+  align-items: center
+  .infoTexto
+    height: auto
+.separador
+  display block
+  @media(max-width: 900px)
+    display: none
+  div
+    width: 100vw
+    height: 20vw
+    background: #044D63
+    opacity: 0.38
+.lista
+  width: 100vw
+  height: auto
+  min-height: 60vw
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  padding: 4vw
+  background: #E9E9E9 
+.listaTitulo
+  width: 100vw
+  padding: 2vw 4vw
+.tarjetita
+  width: 28vw
+  height: 44vw
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  background: white
+  text-decoration: none
+  margin-bottom: 4vw
+  padding 2vw
+  @media(max-width: 900px)
+    width: 90vw
+    height: 141.43vw
+    padding: 6.43vw
+  &:hover
+    box-shadow: 0.5px 0.5px 30px grey
+  .tarjetitaElemento
+    width: 24vw
+    height: 20vw
+    padding: 1vw
+    @media(max-width: 900px)
+      width: 77.14vw
+      height: 64.29vw
+      padding: 3.21vw
+  .info
+    align-items: flex-start
+    .proximo
+      height: 2.5vw
+      width: 22vw
+      text-align: center
+      h5
+        line-height: 2.5
+form 
+  input 
+    height: 3vw
+    width: 100%
+    margin-bottom: 1vw
+  textarea
+    width: 100%
+  .boton
+    height: 3vw
+    width: 10vw
+    font-family: 'Raleway', sans-serif
+    font-size 1.5vw
+    margin 0
+    padding 0
+    color: #ddd
+    text-transform: uppercase
+    @media(max-width: 900px)
+      font-size: 9vw
+//Modificadores
+.alrevez
+  flex-direction: row-reverse
+  @media(max-width: 900px)
+    flex-direction: initial
+.escondido
+  display: none
+
+@import '../src/header/header.styl'
+@import '../src/inicio'
+@import '../src/componentes'
+@import '../src/contacto'
+
