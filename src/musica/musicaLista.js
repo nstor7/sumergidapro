@@ -14,11 +14,12 @@ module.exports = [
   titulo: 'Sumergida Sessions',
   autor: 'Monalisa y Rodrigo',
   miniatura: '/imagenes/monalisaRodrigoMiniatura.jpg',
+  url: '',
   imagen: '', 
   video: 'https://www.youtube.com/embed/zwOEMW0lDi0',
   descripcion: 'Entrevistamos a Monalisa y Rodrigo, duo de Cantautores. Nos Cuentan sobre sus procesos, músicas, metas y más.',
   explicacion: '',
-  proximo: ''
+  proximo: 'escondido'
  },
  {
   titulo: 'Lamma Bada',

@@ -43,7 +43,7 @@ module.exports = yo`
           <h3>SUMERGIDA</h3>
           <h2>AUDIOVISUALES</h2>
           <p>Los géneros audiovisuales son cada vez más relevantes y creemos que es importante generar contenidos para la altísima demanda que trae el mundo digital. </p>
-          <p>Es necesario complementar la oferta audiovisual actual, centrada en la velocidad y muchas veces en una impersonal y consumista manera de ver el mundo. Queremos invitarles a disfrutar del presente y a sensibilizarse ante la belleza de la creación artística.</p>
+          <p>Es necesario complementar la oferta audiovisual actual, centrada en la velocidad y muchas veces en una impersonal y consumista manera de ver el mundo. Queremos invitarles a <b>disfrutar</b>  del presente y a sensibilizarse ante la belleza de la creación <b>artística</b>.</p>
           <p>La tecnología actual nos dá la oportunidad de trascender fronteras, idiomas, culturas. Buscamos aprovechar al máximo las herramientas que tenemos hoy en día para presentarle nuestra propuesta al mundo.</p>
       </div>
     </div>
